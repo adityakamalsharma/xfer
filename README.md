@@ -54,7 +54,7 @@ sudo xfer -p <protocol> [-i <interface>] [-port <custom_port>]
 | --- | --- | --- | --- |
 | **HTTP** | `sudo xfer -p http` | **Linux:** `wget http://<IP>/file -O file`<br>
 
-<br>**Win:** `iwr -uri http://<IP>/file -o file` | **Linux:** `curl -F 'file=@file' http://<IP>/upload` |
+| **Win:** `iwr -uri http://<IP>/file -o file` | **Linux:** `curl -F 'file=@file' http://<IP>/upload` |
 | **SMB** | `sudo xfer -p smb` | **Win:** `copy \\<IP>\share\file .` | **Win:** `copy file \\<IP>\share\` |
 | **FTP** | `sudo xfer -p ftp` | **Linux/Win:** `ftp <IP>` (anonymous/blank) | **Linux/Win:** `ftp <IP>` -> `put file` |
 | **TCP** | `xfer -p tcp -port 9001` | **Linux:** `nc <IP> 9001 > file` | **Linux:** `cat file > /dev/tcp/<IP>/9001` |
