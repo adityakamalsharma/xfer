@@ -27,7 +27,7 @@ sudo apt install python3-impacket python3-pyftpdlib
 Clone the repository and compile the binary:
 
 ```bash
-git clone [https://github.com/yourusername/xfer.git](https://github.com/yourusername/xfer.git)
+git clone https://github.com/adityakamalsharma/xfer.git
 cd xfer
 go mod init xfer
 go build -ldflags="-s -w" -o xfer xfer.go
